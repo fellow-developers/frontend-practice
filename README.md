@@ -22,3 +22,18 @@ git commit -m "<your-message>"
 git push origin dev-<developer-name>-<language-name>-assignment-<assignment-number>
 ```
 8. Add @satyam-seth for review
+
+### Note - After completing a task update your local main branch
+
+1. switch to `main` branch
+```bash
+git checkout main
+```
+
+2. Update main branch
+
+```bash
+git pull origin main
+```
+
+3. Follow [How to contribute](https://github.com/fellow-developers/frontend-practice/edit/main/README.md#how-to-contribute) instructions
