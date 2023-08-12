@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
-  </head>
-  <body>
-    <form>
-      <fieldset>
-        <legend>Personal Information</legend>
-        First Name: <input type="text" name="name" /><br /><br />
-        Last Name: <input type="text" name="name" /><br /><br />
-        Gender: Male <input type="radio" /> Female
-        <input type="radio" /><br /><br />
-        Email:<input type="email" name="email" /><br /><br />
-        D.O.B <input type="date" /><br /><br />
-        <input type="submit" value="submit" />
-      </fieldset>
-    </form>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Personal Information</legend>
+      Salutation:<br><select>
+        <option value="none">none</option>
+        <option value="mr.">Mr.</option>
+        <option value="Dr.">Dr.</option>
+        <option value="Er.">Er.</option>
+        <option value="Mis.">Mis.</option>
+      </select><br><br>
+
+      First Name:<input type="text" name="fname"><br><br>
+      Last Name:<input type="text" name="lname"><br><br>
+
+      <label>
+        Gender:
+        Male <input type="radio" name="start">
+        Female<input type="radio" name="start">
+        <br><br>
+        Emali:<input type="email" name="email">
+
+        <br><br>
+        Date Of Birth:<input type="date" name="DOB">
+
+        <br><br>
+      </label>
+      <label for="Address">Address:</label><br>
+      <textarea id="Address" name="Address" roe="3" col="30">
+
+      </textarea>
+      <br><br>
+     <label>
+      <input type="submit" value="submit">
+     </label> 
+
+    </fieldset>
+  </form>
+</body>
 </html>
