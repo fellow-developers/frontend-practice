@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <form action="/" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="salutation">Salutation:</label>
+
+        <br />
+        <select required id="salutation" name="salutation">
+          <option value="" selected>--None--</option>
+          <option value="Mr.">Mr.</option>
+          <option value="Ms.">Ms.</option>
+          <option value="Mrs.">Mrs.</option>
+          <option value="Dr.">Dr.</option>
+          <option value="Prof.">Prof.</option></select
+        ><br /><br />
+
+        <label for="firstname">First Name:</label>
+        <input type="text" name="fname" id="firstname" required />
+        <br /><br />
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lname" id="lastname" required />
+
+        <br /><br />
+
+        <label for="gender">Gender:</label>
+        Male
+        <input type="radio" name="gender" id="gender" value="male" required />
+        Female
+        <input type="radio" name="gender" id="gender" value="female" required />
+        <br /><br />
+
+        <label for="email"> Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <br /><br />
+        <label for="dob">Date Of Birth:</label>
+
+        <input
+          type="date"
+          name="dob"
+          required
+          min="1950-01-01"
+          max="2023-01-01"
+          id="dob"
+        />
+
+        <br /><br />
+
+        <label for="address">Address:</label><br />
+        <textarea id="address" name="address" rows="3" cols="30" required>
+        </textarea>
+        <br /><br />
+
+        <input type="Submit" value="Submit" />
+        <input type="Reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
